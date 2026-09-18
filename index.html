@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redraft — polish your cover letter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wordmark">Redraft</div>
+    <p class="tagline">Paste a rough draft. Get a version worth sending.</p>
+  </header>
+
+  <main class="desk">
+    <section class="pane pane-draft">
+      <div class="pane-label">Your draft</div>
+      <textarea id="draftInput" placeholder="Paste your cover letter or outreach message here..."></textarea>
+      <button id="polishBtn" class="polish-btn">Polish it</button>
+    </section>
+
+    <div class="seam" aria-hidden="true"></div>
+
+    <section class="pane pane-result">
+      <div class="pane-label">Polished</div>
+      <div id="resultBox" class="result-box empty">
+        <p class="empty-msg">Your polished version will appear here.</p>
+      </div>
+      <div id="changesBox" class="changes-box" hidden>
+        <div class="changes-label">What changed</div>
+        <ul id="changesList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
